@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#174c4f"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="176dp" >
+        
+    <LinearLayout 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/Home_Button_From_Profile"
+            android:layout_width="86dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.47"
+            android:text="@string/home_button_text" />
+
+        <Button
+            android:id="@+id/Contact_Button_From_Profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.49"
+            android:text="@string/contact_button_text" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/Name_Edit_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/E_Mail_Edit_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10" />
+
+    </LinearLayout>
+    
+    <RatingBar
+	    android:id="@+id/Interest_Rating_Bar"
+	    style="@style/myRatingBar"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:numStars="3" 
+	    android:stepSize="1.0" />
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/Interest_Edit_Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter an Interest"
+            android:ems="10"
+             />
+
+        <Button
+            android:id="@+id/Interest_Add_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Add" 
+            
+            />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="600dp"
+        android:layout_height="wrap_content" >
+        
+    </LinearLayout>
+    
+    </LinearLayout>
+    
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/Interest_ListView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+    </ListView>
+   
+</LinearLayout>

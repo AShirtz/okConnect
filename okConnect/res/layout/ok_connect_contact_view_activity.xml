@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#174c4f"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		 >
+
+        <Button
+            android:id="@+id/Home_Button_From_Contact_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/home_button_text" />
+
+        <Button
+            android:id="@+id/Profile_Button_From_Contact_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Profile" />
+
+        <Button
+            android:id="@+id/Contact_Button_From_Contact_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/contact_button_text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/Name_Text_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ERROR RETRIEVING NAME"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail: "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/E_Mail_Text_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ERROR RETRIEVING EMAIL"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User&apos;s Interests:"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/Other_Users_ListView"
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:layout_weight="2.01" >
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+
+        <Button
+            android:id="@+id/Friend_User_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friend User"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/Block_User_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Block User"
+            android:layout_weight="1" />
+        
+        <Button
+            android:id="@+id/Remove_User_Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove User"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+   
+</LinearLayout>

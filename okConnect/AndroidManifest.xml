@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.intel.c3.okconnect"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="10" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.intel.c3.okconnect.OkConnectMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter >
+                <action android:name="com.intel.c3.okconnect" />
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.intel.c3.okconnect.OkConnectProfileActivity" >
+            <intent-filter >
+                <action android:name="com.intel.c3.okconnect.OkConnectProfileActivity" />
+            </intent-filter>            
+        </activity>
+        <activity 
+            android:name="com.intel.c3.okconnect.OkConnectContactActivity" >
+            <intent-filter >
+                <action android:name="com.intel.c3.okconnect.OkConnectContactActivity" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.intel.c3.okconnect.OkConnectContactViewActivity" >
+            <intent-filter>
+                <action android:name="com.intel.c3.okconnect.OkConnectContactViewActivity" />
+            </intent-filter>
+        </activity>
+        <service 
+            android:name=".OkConnectApplicationService"
+            android:exported="true" >
+            <intent-filter >
+                <action android:name="com.intel.c3.okconnect.OkConnectApplicationService" />
+            </intent-filter>
+            
+        </service>
+        <service 
+            android:name=".OkConnectRegisterApplication"
+            android:debuggable="true"
+            android:exported="true" >
+            <intent-filter >
+                <action android:name="com.intel.c3.okconnect.REGISTER_APP" />
+            </intent-filter>
+            
+        </service>
+    </application>
+
+</manifest>
